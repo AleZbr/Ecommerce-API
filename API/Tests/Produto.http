@@ -1,0 +1,33 @@
+### POSTMAN ou INSOMNIA
+### Instalar a extensão REST CLIENT
+### Criar um arquivo .http
+
+### Raiz do Projeto
+GET http://localhost:5195
+
+### Listar Produtos
+GET http://localhost:5195/api/produto/listar
+
+### Buscar produto por nome
+GET http://localhost:5195/api/produto/buscar/Mouse
+
+### Cadastrar Produto
+POST http://localhost:5195/api/produto/cadastrar
+Content-Type: application/json
+
+{
+    "nome" : "Teclado Gamer"
+}
+
+
+###Remove produto
+DELETE http://localhost:5195/api/produto/remover/gvg
+
+
+###Alterar Produto
+PUT  http://localhost:5195/api/produto/alterar/6c57a397-a361-4c03-8fbc-5bdef964d73a
+Content-Type: application/json
+
+{
+    "nome" : "Mouse"
+}
